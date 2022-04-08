@@ -188,11 +188,11 @@ class _SudokuGameState extends State<SudokuGame> {
                           child:
                               Column(mainAxisSize: MainAxisSize.min, children: <
                                   Widget>[
-                        Container(
-                          decoration: BoxDecoration(
-                              color: colorBorderTable,
+                               Container(
+                                 decoration: BoxDecoration(
+                                 color: colorBorderTable,
                               borderRadius:
-                                  BorderRadius.all(const Radius.circular(8))),
+                                  const BorderRadius.all(Radius.circular(8))),
                           padding: const EdgeInsets.all(6),
                           child: Column(
                               mainAxisSize: MainAxisSize.min,
@@ -255,13 +255,13 @@ class _SudokuGameState extends State<SudokuGame> {
       color: Colors.white,
       child:
           Row(mainAxisAlignment: MainAxisAlignment.center, children: <Widget>[
-        const Text("SUDOKU",
+             const Text("SUDOKU",
             style: TextStyle(
                 color: Colors.blue, fontSize: 30, fontWeight: FontWeight.bold)),
-        Expanded(child: Container()),
-        FlatButton(
-          color: Colors.blue,
-          child: const Text("New Game",
+            Expanded(child: Container()),
+              FlatButton(
+               color: Colors.blue,
+                child: const Text("New Game",
               style: TextStyle(color: Colors.white, fontSize: 18)),
           onPressed: () {
             restart();
